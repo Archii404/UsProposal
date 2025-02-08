@@ -36,3 +36,185 @@
     transform: rotate(360deg);
   }
 }
+
+/* App.css */
+
+/* Reset some styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #ff5e62, #ff9966); /* Soft pink-red gradient */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+/* Main container */
+.app-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Header styling */
+.header {
+  background: rgba(255, 255, 255, 0.2); /* Soft, translucent background */
+  color: white;
+  padding: 50px 20px;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  margin-bottom: 30px;
+}
+
+/* Proposal box styling */
+.proposal-box {
+  background-color: white;
+  color: #ff4e89;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.message {
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* Button container styling */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Common button styling */
+.proposal-btn {
+  padding: 14px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: none;
+}
+
+/* Yes button styling */
+.yes-btn {
+  background-color: #ff4e89;
+  color: white;
+}
+
+.yes-btn:hover {
+  background-color: #ff65a3;
+  transform: scale(1.05);
+}
+
+.yes-btn:active {
+  background-color: #ff3385;
+  transform: scale(1.02);
+}
+
+/* No button styling */
+.no-btn {
+  background-color: #ffffff;
+  color: #ff4e89;
+  border: 2px solid #ff4e89;
+}
+
+.no-btn:hover {
+  opacity: 0;
+  transform: translateX(-20px); /* Moves aside */
+}
+
+.no-btn:active {
+  background-color: #ff3385;
+  color: white;
+  transform: translateX(-5px); /* Slight movement when clicked */
+}
+
+/* Modal styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 40px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  max-width: 600px;
+}
+
+.modal-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.modal-note {
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.modal-btn {
+  background-color: #ff4e89;
+  color: white;
+  padding: 14px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: none;
+}
+
+.modal-btn:hover {
+  background-color: #ff65a3;
+  transform: scale(1.05);
+}
+
+/* Close button for modal */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: #ff4e89;
+  cursor: pointer;
+}
+
