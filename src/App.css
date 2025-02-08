@@ -152,7 +152,7 @@ body {
   transform: translateX(-5px); /* Slight movement when clicked */
 }
 
-/* Modal styles */
+/* Main Modal styles */
 .modal {
   position: fixed;
   top: 0;
@@ -183,11 +183,15 @@ body {
   margin-bottom: 20px;
 }
 
+.mx-2{
+  margin-left: 10px;
+}
+
 .modal-note {
   font-size: 18px;
+  color: black;
   font-style: italic;
   margin-bottom: 30px;
-  color: black;
 }
 
 .modal-btn {
@@ -207,7 +211,57 @@ body {
   transform: scale(1.05);
 }
 
-/* Close button for modal */
+/* Short note button styling */
+.short-note-btn {
+  background-color: #fff;
+  color: #ff4e89;
+  border: 2px solid #ff4e89;
+  margin-top: 15px;
+}
+
+.short-note-btn:hover {
+  background-color: #ff65a3;
+  color: white;
+}
+
+/* Love letter modal styles */
+.letter-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.letter-modal-content {
+  background-color: white;
+  padding: 40px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  max-width: 600px;
+}
+
+.letter-header {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #ff4e89;
+}
+
+.letter-body {
+  font-size: 18px;
+  line-height: 1.6;
+  font-style: italic;
+  color: #333;
+}
+
+/* Close button for modals */
 .close-btn {
   position: absolute;
   top: 10px;
