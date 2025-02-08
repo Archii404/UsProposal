@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import img from './ui.jpeg'
 
 const App = () => {
   // State to control the modal visibility
@@ -40,12 +41,17 @@ const App = () => {
               &times;
             </button>
             <img
-              src="https://via.placeholder.com/350x350?text=Happy+Her" // Replace with her image URL
+              src= {img}// Replace with her image URL
               alt="Happy Her"
               className="modal-img"
             />
             <p className="modal-note">
-              "Every moment with you is a treasure. You are my heart, my soul, and my everything. I can't wait for our forever."
+              "Every moment with you is a treasure. You are my heart, my soul, and my everything. I can't wait for our forever. "
+            </p>
+            <p className="modal-note">
+
+               Your's Tofuuuu Boiiiii ~ 
+               Archit !! 
             </p>
             <button className="modal-btn" onClick={handleCloseModal}>
               Welcome to my world
